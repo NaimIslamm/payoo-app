@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo-Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-display text-white grid place-content-center">
+                <div class="stats shadow">
+                <div class="stat">
+                 
+                  <div id="balance-amount" class="stat-value">9400</div>
+                  <div class="stat-desc">Available Balance</div>
+                </div>
+              </div>
+              <div class="divider"></div>
+
+              <!-- Featured Buttons -->
+
+              <div  class="buttons">
+                <button id="featured-add-money" class="btn btn-xs sm:btn-sm">Add Money</button>
+                <button id="featured-cash-out" class="btn btn-xs sm:btn-sm">Cash Out</button>
+                <button id="featured-transaction" class="btn btn-xs sm:btn-sm">Transactions</button>
+            </div>
+             <!-- Featured Buttons End -->
+                <div class="divider"></div>
+                <!-- add money -->
+                <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                      <fieldset class="fieldset">
+                        <label class="fieldset-label">Amount</label>
+                        <input type="text" id="amount-number" class="input" placeholder="Add Money" />
+                        <label class="fieldset-label">Pin</label>
+                        <input type="password" id="pin-number" class="input" placeholder="Password" />
+                       
+                        <button id="add-money-btn" class="btn btn-neutral mt-4">Add Money</button>
+                      </fieldset>
+                    </div>
+                  </div>
+              <!-- add money end -->
+               <!-- cash out -->
+               <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label">Amount</label>
+                    <input type="text" id="cash-out-number" class="input" placeholder="Add Cash Out Money" />
+                    <label class="fieldset-label">Pin</label>
+                    <input type="password" id="cash-out-pin-number" class="input" placeholder="Password" />
+                   
+                    <button id="cash-out-btn" class="btn btn-neutral mt-4">Cash Out</button>
+                  </fieldset>
+                </div>
+              </div>
+              <!-- cash out end-->
+
+              <!-- Transaction Sheet -->
+               <div id="transaction-form" class="hidden">
+                <h2 class="text-3xl bg-primary">Transaction History</h2>
+                <div id="transaction-container" class="text-xl   bg-green-500"></div>
+               </div>
+              <!-- Transaction Sheet End -->
+            </div>
+            
+          </div>
+    </main>
+    <script src="js/utility.js"></script>
+   <script src="js/transactions.js"></script>
+   <script src="js/features.js"></script>
+    <script src="js/tailwind.config.js"></script>
+</body>
+</html>

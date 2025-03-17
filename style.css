@@ -28,3 +28,17 @@ input::placeholder {
     opacity: 0.8;
     text-align: center
   }
+
+  .btn{
+    background-color: blue;
+    border: solid 1px blue;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+  
+ .buttons #featured-add-money, #featured-cash-out, #featured-transaction{
+color: white;
+  }
