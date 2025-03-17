@@ -1,0 +1,30 @@
+.mockup-phone-display{
+    width: 300px;
+    height: 530px;
+    background-color: white;
+}
+input::placeholder {
+    color: black;
+    opacity: 0.5;
+  }
+ input[type=text]{
+    color: black;
+    opacity: 0.5;
+  }
+  input[type=password]{
+    color: black;
+    opacity: 0.5;
+  }
+  .link{
+    color: black;
+    opacity: 0.5;
+  }
+  .divider {
+    margin: var(--divider-m, 1rem -2rem);
+  }
+
+  .stat-value,.stat-desc{
+    color: black;
+    opacity: 0.8;
+    text-align: center
+  }
